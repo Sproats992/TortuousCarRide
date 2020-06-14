@@ -14,6 +14,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/hmlongco/Resolver.git", from: "1.1.4"),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.1.1")
     ],
     targets: [
@@ -21,9 +22,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "TortuousCarRide",
-            dependencies: ["RxSwift"]),
+            dependencies: ["RxSwift", "Resolver"]),
         .testTarget(
             name: "TortuousCarRideTests",
-            dependencies: ["TortuousCarRide"]),
+            dependencies: ["TortuousCarRide", "Resolver"]),
     ]
 )
