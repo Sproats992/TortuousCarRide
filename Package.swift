@@ -16,14 +16,14 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/hmlongco/Resolver.git", from: "1.1.4"),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.1.1"),
-        .package(url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.12.0")
+        .package(name:"SQLite.swift", url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.12.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "TortuousCarRide",
-            dependencies: ["RxSwift", "Resolver", "SQLite.swift"]),
+            dependencies: ["RxSwift", "Resolver"]),
         .testTarget(
             name: "TortuousCarRideTests",
             dependencies: ["TortuousCarRide"]),
