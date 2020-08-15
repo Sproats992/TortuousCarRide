@@ -20,12 +20,12 @@
         }
       },
       {
-        "package": "SwiftSVG",
-        "repositoryURL": "https://github.com/mchoe/SwiftSVG",
+        "package": "SQLite.swift",
+        "repositoryURL": "https://github.com/stephencelis/SQLite.swift.git",
         "state": {
           "branch": null,
-          "revision": "c3a8866a25ace169ee8e5c037670ba14aa59606f",
-          "version": "2.3.2"
+          "revision": "0a9893ec030501a3956bee572d6b4fdd3ae158a1",
+          "version": "0.12.2"
         }
       }
     ]
